@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+
+
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+nav {
+    font-family: "Ubuntu", sans-serif;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 60px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+nav li {
+    padding: 0 12px;
+}
+
+.brand img {
+    width: 50px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    padding: 12px;
+
+}
+
+.container {
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 20px;
+    padding: 35px;
+    background-image: url(images/image\ copy\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+
+
+}
+
+.bottom {
+    position: static;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.61);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+
+
+
+}
+
+i {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#myprogreesbar {
+    width: 80vh;
+    text-align: center;
+    cursor: pointer;
+}
+
+.song-item {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: 30%;
+    color: black;
+    margin-top: 12px 12px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.song-item img {
+    width: 43px;
+    margin: 23px 0;
+    border-radius: 20px;
+}
+
+.songlistplay {
+    margin-bottom: 20px;
+}
+
+.songinfo {
+    position: absolute;
+    left: 30vw;
+    font-family: "Ubuntu", sans-serif, varela;
+    margin-top: 20px;
+
+
+}
+
+.songinfo img {
+    opacity: 0;
+    transition: 0.2s ease-in;
+}
+#volumeIcon {
+    cursor: pointer;
+    margin: 0 10px;
+    right: 35vw;
+    position: absolute;
+    margin-top: 20px;
+}
+
+#volumeBar {
+    width: 100px;
+    position: absolute;
+    right: 30vw;
+    margin-top: 20px;
+}
