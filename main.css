@@ -6,8 +6,6 @@
     padding: 0;
     box-sizing: border-box;
     text-transform: capitalize;
-
-
 }
 
 body {
@@ -16,17 +14,18 @@ body {
 
 nav {
     font-family: "Ubuntu", sans-serif;
-
 }
 
 nav ul {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     list-style: none;
     height: 60px;
     background-color: black;
     color: white;
     cursor: pointer;
+    padding: 0 20px;
 }
 
 nav li {
@@ -43,7 +42,6 @@ nav li {
     font-weight: bolder;
     font-size: 1.3rem;
     padding: 12px;
-
 }
 
 .container {
@@ -53,30 +51,24 @@ nav li {
     font-family: "Ubuntu", sans-serif;
     display: flex;
     margin: 20px auto;
-    width: 70%;
+    width: 90%;
     border-radius: 20px;
     padding: 35px;
     background-image: url(images/image\ copy\ 2.png);
     background-size: cover;
     background-repeat: no-repeat;
     flex-direction: column;
-
-
+    gap: 10px;
 }
 
 .bottom {
-    position: static;
-    height: 100px;
     background-color: rgba(0, 0, 0, 0.61);
-    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     flex-direction: column;
-
-
-
+    padding: 12px;
 }
 
 i {
@@ -85,29 +77,25 @@ i {
 }
 
 #myprogreesbar {
-    width: 80vh;
-    text-align: center;
-    cursor: pointer;
+    width: 50%;
 }
 
 .song-item {
-    height: 50px;
+    min-height: 55px;
     display: flex;
     background-color: white;
-    width: 30%;
+    width: 50%;
     color: black;
-    margin-top: 12px 12px;
+    margin-top: 12px;
     padding: 10px;
     justify-content: space-between;
     align-items: center;
-    border-radius: 20px;
-    margin-top: 20px;
+    border-radius: 10px;
 }
 
 .song-item img {
-    width: 43px;
-    margin: 23px 0;
-    border-radius: 20px;
+    width: 50px;
+    border-radius: 10px;
 }
 
 .songlistplay {
@@ -115,29 +103,86 @@ i {
 }
 
 .songinfo {
-    position: absolute;
-    left: 30vw;
     font-family: "Ubuntu", sans-serif, varela;
-    margin-top: 20px;
-
-
+    text-align: center;
+    margin-top: 10px;
 }
 
 .songinfo img {
     opacity: 0;
     transition: 0.2s ease-in;
 }
+
+.volume-controls {
+    display: flex;
+    
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
 #volumeIcon {
     cursor: pointer;
-    margin: 0 10px;
-    right: 35vw;
-    position: absolute;
-    margin-top: 20px;
 }
 
 #volumeBar {
-    width: 100px;
-    position: absolute;
-    right: 30vw;
-    margin-top: 20px;
+    width: 120px;
+}
+
+/* ✅ TABLET RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .song-item {
+        font-size: 14px;
+    }
+
+    #myprogreesbar {
+        width: 95%;
+    }
+
+    #volumeBar {
+        width: 90px;
+    }
+}
+
+/* ✅ MOBILE RESPONSIVE */
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .brand img {
+        width: 40px;
+    }
+
+    .song-item {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .song-item img {
+        width: 30px;
+    }
+
+    #myprogreesbar {
+        width: 100%;
+    }
+
+    .volume-controls {
+        flex-direction: column;
+    }
+
+    #volumeBar {
+        width: 100%;
+    }
+
+    .songinfo {
+        font-size: 12px;
+    }
 }
